@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App - JSTraining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body onload="updateTodo()">
+
+    <div id="container">
+        <form class="controls" id="form">
+
+            <h1>Awesome TODO App</h1>
+
+            <input type="text" id="input" autocomplete="off">
+
+            <button type="submit" id="add" onclick="addTodo()">
+                Add TODO
+            </button>
+
+            <button type="button" id="remove" onclick="removeTodo()">
+                Remove done TODO
+            </button>
+
+        </form>
+
+        <!-- Container for the TODOS -->
+        <ul id="list"></ul>
+    </div>
+    
+    <!-- <script src="LCOScript.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
